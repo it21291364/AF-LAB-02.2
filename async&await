@@ -1,0 +1,19 @@
+  //----------------------------------------------------------------
+  //Question C
+
+  // Define the fetchDataAsync function as an async function
+async function fetchDataAsync(url) {
+  // Use a try...catch block to handle errors
+  try {
+    // Use the await keyword to wait for the Promise returned by fetchData
+    let data = await fetchData(url);
+    // Log the data to the console if the Promise is resolved
+    console.log(data);
+  } catch (error) {
+    // Log the error to the console if the Promise is rejected
+    console.error(error);
+  }
+}
+
+// Use the fetchDataAsync function to fetch data from a URL
+fetchDataAsync("https://sliit.lk");
